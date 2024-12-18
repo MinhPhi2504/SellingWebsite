@@ -106,7 +106,7 @@ export class HashTable {
         let index = this.hashFunc(key, this.m)
         let j = 0
         while (1) {
-            if (this.array[index] != undefined)
+            if (this.array[index].id === orderId )
                 return this.array[index]
             else {
                 j++
@@ -119,7 +119,7 @@ export class HashTable {
         let index = this.hashFunc(key, this.n)
         let j = 0
         while (1) {
-            if (this.productArray[index] != undefined)
+            if (this.productArray[index].id === productId)
                 return this.productArray[index]
             else {
                 j++
